@@ -8,12 +8,13 @@ const MyMatchRoute: Array<RouteRecordRaw> = [
             {
                 path: ':contestCode([A-Z\\d]{10})',
                 name: "MyContestDetail",
-                component: () => import('../components/MyMatchContest.vue'),
+                component: () => import('../components/MyMatchContest.vue')
             },
             {
                 path: '/match/my',
                 name: "MyMatch",
                 component: () => import('../components/MyMatch.vue'),
+                sensitive: true,
             }
         ]
     }
